@@ -1,0 +1,509 @@
+/* All variables First! */
+
+/* 
+NOTICE::: 
+1- The greater part of the layout for Desktop and Tablet versins would be made possible using CSS GRID.
+2- FONT-SIZES ARE MEASURES IN VW- VIEWPORT-WIDTH;
+3- 
+
+
+
+
+
+*/
+:root{
+    --official-color: #FF1493;
+    --official-color-shade: rgba(255, 20, 145, 0.733);
+    --offical-purple: #F65EFF;
+    --offical-footer-color: #646464;
+
+
+    --main-black: rgb(0, 0, 0);
+    --grey: #646464;
+
+}
+
+/* GLOBAL STYLING */
+
+h1, h2, h3, p{
+    margin: 0;
+    padding:  0;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    outline: none
+}
+
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-column-gap: 0.1em;
+    text-align: center;
+    list-style: none;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.6vw;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+nav ul img{
+    width: 20%;
+    margin: 0;
+
+}
+
+
+nav ul li{
+    font-size: 1.2vw;
+    padding-top: 15%;
+
+
+}
+
+nav ul li::before{
+    content: "";
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+    background-color: var(--official-color-shade);
+
+}
+
+
+nav ul li:hover{
+    cursor: pointer;
+    color: var(--official-color);
+    transform: scale(1.2);
+    transition: transform  0.4s ease-in-out
+    
+}
+
+
+/* End of Nav Styling DESKTOP */
+
+
+/* Start of Showcase Styling DESKTOP */
+
+.showcase{
+    display: grid;
+    grid-template-columns: repeat(2, 70% 30%);
+    margin: 4em 0;
+
+}
+
+.showcase img{
+    width: 100%;
+    transform: scaleX(-1);
+   
+}
+
+.showcaseText{
+    padding: 0 0em 0 3em;
+}
+
+.showcaseText h1, .culture h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 5.7vw;
+    font-weight: bolder;
+    width: 100%;
+    background: linear-gradient(to top right , var(--offical-purple), var(--official-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:  0;
+
+   
+}
+
+
+.showcaseText p{
+    font-size: 1.8vw;
+    font-family: 'Dosis', sans-serif;
+
+
+}
+
+.showcaseText button{
+    background-color: white;
+    border: 0.2px solid var(--offical-purple);    
+    outline: none;
+    border-radius: 200px;
+    padding: 1em 2em;
+    box-shadow: 0 0 4px 1px rgba(255, 20, 145, 0.267) ;
+    transform: scale(1.2);
+    margin: 3em 0;
+}
+
+/* END of Showcase Styling DESKTOP */
+
+
+/* Start of Culture Styling DESKTOP */
+
+.culture h1{
+ font-size:  2vw;
+ width: 100%;
+ text-align: center;
+
+}
+
+
+.cultureList{
+    display: grid;
+    grid-template-columns: repeat(3, 30.5%);
+    grid-column-gap: 2em;
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 0 12px 1px var(--offical-purple);
+    border-radius: 4px;
+    padding: 3em 1.4em;
+
+
+
+}
+
+.cultureList img{
+    width: 40%;
+}
+
+.cultureList h3{
+    font-size: 1.7vw;
+    color: var(--grey)
+}
+
+.cultureList p{
+    font-size: 1.3vw;
+    line-height: 1.5em;
+    margin: 0.5em 0;
+}
+
+/* End of Culture Styling DESKTOP */
+
+
+/* Start of FounderBox Styling DESKTOP */
+    .founder{
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70%);
+        grid-column-gap: 3em;
+        width: 80%;
+        margin: 10em auto;
+        position: relative;
+    }
+
+    .founderImage img{
+        width: 350px;
+        height: 350px;
+        border-radius: 300px;
+       
+    }
+
+    .founder img::before{
+        content: "";
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 11%;
+        bottom: 0;
+        background-color: green;
+        display: inline-block;
+        
+        
+
+    }
+
+    .founderspeech {
+        text-align: center;
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.4vw;
+        color: var(--grey);
+        line-height: 1.5em;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .founder .name h3{
+       color: black;
+       padding: 0;
+       margin: 0;
+    }
+
+    .name{
+        margin-top: 3em;
+    }
+
+    .founder .name p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .founderImage::before{
+        content: "";
+        width: 50%;
+        height: 43%;
+        background-color: var(--offical-purple);
+        top: -10%;
+       left: 20%;
+        position: absolute;
+        border-radius: 300px;
+        z-index: -4;
+        animation: move 1s infinite alternate;
+        transform: rotate(-190deg)
+    }
+
+
+    .founderImage{
+        position: relative;
+    }
+    
+
+/* End of FounderBox Styling DESKTOP */
+
+
+
+/*  Start of TESTIMONY Styling DESKTOP  */
+
+    .testimony{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-column-gap: 1em;
+        width: 80%;
+        margin: 7em auto;
+
+
+    }
+
+    .testimonyBox{
+        text-align: center;
+        position: relative;
+        line-height: 1.7em;
+        font-family: 'Dosis', sans-serif;
+        position: relative;
+        padding: 4em 1.4em;
+        background-color: white;
+        border: 2px solid var(--official-color);
+        border-radius: 6px;
+        
+    }
+
+    
+
+
+    .testimonyBox .name{
+        font-family: 'Major Mono Display', monospace;
+    }
+
+    .testimonyBox img{
+        width: 20%;
+        position: absolute;
+        border-radius: 300px;
+        bottom: -10%;
+        left: 40%;
+
+    }
+
+
+
+
+/* End of TESTIMONY Styling DESKTOP  */
+
+
+/* Start of MessageUs Styling DESKTOP  */
+
+.messageus{
+    width: 60%;
+    margin:  9em auto;
+    font-family: 'Dosis', sans-serif;
+    border: 1px solid var(--official-color);
+    padding: 3em 4em;
+    text-align: center;
+    position: relative;
+
+}
+
+.messageus h1{
+   background-color: white;
+   display: inline-block;
+   padding: 0em 1em;
+   position: absolute;
+   top: -5%;
+   left: 35%;
+}
+
+
+.messagecredentials{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 4em;
+}
+
+.credentials input, .messageus textarea{
+    width: 70%;
+    border-style: solid;
+    border-top: 1px  solid transparent;
+    border-left: 1px  solid transparent;
+    border-right: 1px  solid transparent;
+    border-bottom: 1px solid var(--offical-purple);
+    font-size: 1.2em;
+    font-family: 'Major Mono Display', monospace;
+    margin: 1em
+    
+    
+}
+
+.messageBox textarea{
+    width: 100%;
+    height: 20vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+.messageus textarea:focus{
+    outline: none;
+}
+
+.messageus button{
+    background: linear-gradient( to top right,  var(--official-color-shade), var(--offical-purple));
+    border: 1px solid var(--offical-purple);
+    padding: 1.2em 3em;
+    color: white;
+    border-radius: 0.3em;
+    margin: 2em auto;
+    cursor: pointer;
+    width: 60%;
+    
+}
+
+.messageus button:active{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Start of MessageUs Styling DESKTOP  */
+
+/* Start of Footer Styling DESKTOP  */
+
+footer{
+    width: 100%;
+    background-color: var(--offical-footer-color);
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 2em;  
+    padding: 2em 0.4em 0em 0.4em; 
+    
+
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+footer ul li{
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    line-height: 2em;
+}
+
+footer h3{
+   font-weight: lighter;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+
+/* Start  of the animation for the nav items Upon hover */
+@keyframes increaseHeight{
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+
+@keyframes move{
+    from{
+        height: 50%;
+    }
+
+    to{
+        height: 120%;
+    }
+}
+
+
+/* THE STYLE ADJUST FOR TABLET VIEW. */
+
+
+@media(max-width: 768px){
+/* Start of NavBar Tablet */
+    nav ul li{
+        font-size: 1.2em;
+    }
+
+}
+/* End of NavBar Tablet */
+
+/* STARt of CultureBox Tablet */
+ 
+    .cultureList{
+        width: 90%;
+    }
+
+/* End of CultureBox Tablet */
+
+
+/* END THE STYLE ADJUST FOR TABLET VIEW. */
