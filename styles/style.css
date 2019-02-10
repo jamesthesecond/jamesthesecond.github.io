@@ -51,7 +51,7 @@ nav ul{
     grid-column-gap: 0.1em;
     text-align: center;
     list-style: none;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.6vw;
     color: var(--grey);
     margin: 0;
@@ -123,7 +123,7 @@ nav ul li:hover{
 }
 
 .showcaseText h1, .culture h1{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 5.7vw;
     font-weight: bolder;
     width: 100%;
@@ -138,7 +138,7 @@ nav ul li:hover{
 
 .showcaseText p{
     font-size: 1.8vw;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 
 }
@@ -174,7 +174,7 @@ nav ul li:hover{
     width: 80%;
     margin: 2em auto;
     text-align: center;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-shadow: 0 0 12px 1px var(--offical-purple);
     border-radius: 4px;
     padding: 3em 1.4em;
@@ -189,7 +189,7 @@ nav ul li:hover{
 
 .cultureList h3{
     font-size: 1.7vw;
-    color: var(--grey)
+   
 }
 
 .cultureList p{
@@ -218,23 +218,11 @@ nav ul li:hover{
        
     }
 
-    .founder img::before{
-        content: "";
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        top: 11%;
-        bottom: 0;
-        background-color: green;
-        display: inline-block;
-        
-        
-
-    }
+  
 
     .founderspeech {
         text-align: center;
-        font-family: 'Dosis', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 1.4vw;
         color: var(--grey);
         line-height: 1.5em;
@@ -298,7 +286,7 @@ nav ul li:hover{
         text-align: center;
         position: relative;
         line-height: 1.7em;
-        font-family: 'Dosis', sans-serif;
+        font-family: 'Raleway', sans-serif;
         position: relative;
         padding: 4em 1.4em;
         background-color: white;
@@ -311,7 +299,7 @@ nav ul li:hover{
 
 
     .testimonyBox .name{
-        font-family: 'Major Mono Display', monospace;
+        font-family: 'Raleway', sans-serif;
     }
 
     .testimonyBox img{
@@ -320,6 +308,7 @@ nav ul li:hover{
         border-radius: 300px;
         bottom: -10%;
         left: 40%;
+        border: 10px solid white;
 
     }
 
@@ -334,7 +323,7 @@ nav ul li:hover{
 .messageus{
     width: 60%;
     margin:  9em auto;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
     border: 1px solid var(--official-color);
     padding: 3em 4em;
     text-align: center;
@@ -366,7 +355,7 @@ nav ul li:hover{
     border-right: 1px  solid transparent;
     border-bottom: 1px solid var(--offical-purple);
     font-size: 1.2em;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Raleway', sans-serif;
     margin: 1em
     
     
@@ -375,7 +364,7 @@ nav ul li:hover{
 .messageBox textarea{
     width: 100%;
     height: 20vh;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .messageus textarea:focus{
@@ -487,23 +476,163 @@ footer h3{
 
 /* THE STYLE ADJUST FOR TABLET VIEW. */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* For Nav Start */
+    nav ul img{
+        width: 35%;
+    }
 
-@media(max-width: 768px){
-/* Start of NavBar Tablet */
     nav ul li{
-        font-size: 1.2em;
+        font-size: 2vw;
+
     }
 
-}
-/* End of NavBar Tablet */
+    /* End Nav Style */
 
-/* STARt of CultureBox Tablet */
- 
-    .cultureList{
-        width: 90%;
-    }
+    /* For culuture */
+        .cultureList{
+            width: 93%;
+        }
 
-/* End of CultureBox Tablet */
+        .cultureList img{
+            width: 49%;
+            margin: 2em 0;
+        }
 
+        .cultureList h3{
+            font-size: 2.1vw;
+        }
+
+        .cultureList p{
+            font-size: 1.9vw;
+        }
+
+
+     /* END For culuture */
+
+
+     /* Founder Style */
+        
+        .founder{
+            width: 90%;
+
+        }
+
+        .founderImage img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .founderspeech{
+            font-size: 1.9vw;
+
+        }
+
+        .founder .name h3{
+            font-size: 2.4vw;
+        }
+
+        .founder .name p{
+            font-size: 2.4vw;
+        }
+
+
+     /* End Founder Style */
+
+     /* Testimony Styling Start */
+        .testimony{
+            width: 95%;
+            margin:  0 auto;
+            grid-column-gap: 0.5em;
+
+        }
+     
+     /* Testimony Styling End */
+    
+     /* MessageUs Box start */
+
+        .messageus{
+            width: 70%;
+        }
+
+        .credentials input{
+            width: 90%;
+        }
+
+    
+
+     /* MessageUs Box End */
+
+/* END OF THE STYLE ADJUST FOR TABLET VIEW. */
+  }
 
 /* END THE STYLE ADJUST FOR TABLET VIEW. */
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/* @media (min-width: 1281px) {
+  
+    //CSS
+    
+  } */
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  /* @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    
+  }
+   */
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+/*   
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    
+  } */
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    
+  }
+   */
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  /* @media (min-width: 481px) and (max-width: 767px) {
+    
+    //CSS
+    
+  } */
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  /* @media (min-width: 320px) and (max-width: 480px) {
+    
+    //CSS
+    
+  } */
