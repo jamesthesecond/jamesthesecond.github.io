@@ -14,7 +14,7 @@ NOTICE:::
 :root{
     --official-color: #FF1493;
     --official-color-shade: rgba(255, 20, 145, 0.733);
-    --offical-purple: #F65EFF;
+    --official-purple: #F65EFF ;
     --offical-footer-color: #646464;
 
 
@@ -100,11 +100,21 @@ nav ul li:hover{
 }
 
 
+/* Putting out the mobile NAV */
+.mobileNav{
+    display: none;
+}
+
+
 /* End of Nav Styling DESKTOP */
 
 
 /* Start of Showcase Styling DESKTOP */
 
+/* Hide Mobile Showcase */
+.showcaseforMobile{
+    display: none;
+}
 .showcase{
     display: grid;
     grid-template-columns: repeat(2, 70% 30%);
@@ -127,7 +137,7 @@ nav ul li:hover{
     font-size: 5.7vw;
     font-weight: bolder;
     width: 100%;
-    background: linear-gradient(to top right , var(--offical-purple), var(--official-color));
+    background: linear-gradient(to top right , var(--official-purple), var(--official-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin:  0;
@@ -145,7 +155,7 @@ nav ul li:hover{
 
 .showcaseText button{
     background-color: white;
-    border: 0.2px solid var(--offical-purple);    
+    border: 0.2px solid var(--official-purple);    
     outline: none;
     border-radius: 200px;
     padding: 1em 2em;
@@ -161,7 +171,6 @@ nav ul li:hover{
 
 .culture h1{
  font-size:  2vw;
- width: 100%;
  text-align: center;
 
 }
@@ -175,7 +184,7 @@ nav ul li:hover{
     margin: 2em auto;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0 0 12px 1px var(--offical-purple);
+    box-shadow: 0 0 12px 1px var(--official-purple);
     border-radius: 4px;
     padding: 3em 1.4em;
 
@@ -246,19 +255,6 @@ nav ul li:hover{
         margin: 0;
     }
 
-    .founderImage::before{
-        content: "";
-        width: 50%;
-        height: 43%;
-        background-color: var(--offical-purple);
-        top: -10%;
-       left: 20%;
-        position: absolute;
-        border-radius: 300px;
-        z-index: -4;
-        animation: move 1s infinite alternate;
-        transform: rotate(-190deg)
-    }
 
 
     .founderImage{
@@ -353,7 +349,7 @@ nav ul li:hover{
     border-top: 1px  solid transparent;
     border-left: 1px  solid transparent;
     border-right: 1px  solid transparent;
-    border-bottom: 1px solid var(--offical-purple);
+    border-bottom: 1px solid var(--official-purple);
     font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
     margin: 1em
@@ -371,9 +367,9 @@ nav ul li:hover{
     outline: none;
 }
 
-.messageus button{
-    background: linear-gradient( to top right,  var(--official-color-shade), var(--offical-purple));
-    border: 1px solid var(--offical-purple);
+.messageus button, .mobileNav button{
+    background: linear-gradient( to top right,  var(--official-color-shade), var(--official-purple));
+    border: 1px solid var(--official-purple);
     padding: 1.2em 3em;
     color: white;
     border-radius: 0.3em;
@@ -427,58 +423,29 @@ footer h3{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Animation */
-
-/* Start  of the animation for the nav items Upon hover */
-@keyframes increaseHeight{
-    from{
-        height: 0%;
-    }
-
-    to{
-        height: 100%;
-    }
-}
-
-@keyframes move{
-    from{
-        height: 50%;
-    }
-
-    to{
-        height: 120%;
-    }
-}
-
-
 /* THE STYLE ADJUST FOR TABLET VIEW. */
 
 @media (min-width: 768px) and (max-width: 1024px) {
     
+    body{
+        position: relative;
+        padding-top: 4em;
+        
+    }
+
     /* For Nav Start */
+
+
+    nav{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        margin: 0 0 4em 0;
+        box-shadow: 0em 0.009em 0.3em 0em var(--offical-purple);
+    }
     nav ul img{
         width: 35%;
     }
@@ -547,6 +514,14 @@ footer h3{
             grid-column-gap: 0.5em;
 
         }
+
+        .testimonyBox{
+            padding: 4em 1em
+        }
+
+        .testimonyBox img{
+            bottom: -5%;
+        }
      
      /* Testimony Styling End */
     
@@ -560,6 +535,11 @@ footer h3{
             width: 90%;
         }
 
+        .messageus h1{
+            top: -3%;
+            left: 28%;
+        }
+
     
 
      /* MessageUs Box End */
@@ -567,7 +547,328 @@ footer h3{
 /* END OF THE STYLE ADJUST FOR TABLET VIEW. */
   }
 
-/* END THE STYLE ADJUST FOR TABLET VIEW. */
+  
+
+/* STYLING FOR MOBILE VIEW */
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    /* Adding a position  of relative to the
+    body element, so
+    a fixed nav can be possibe  and also 
+    some padding to put it down. away from
+    the fixed nav*/
+    body{
+        position: relative;
+        padding-top: 3em;
+    }
+
+    /* Putting off the DESKTOP NAV */
+    nav{
+        display: none;
+    }
+
+    /* The new Mobile nav */
+
+    .mobileNav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.945);
+       
+    }
+
+    
+    .mainmobileNav{
+        display: grid;
+        grid-template-columns: repeat(2, 80% 20%);
+
+    }
+    
+    .mainmobileNavImg img{
+        width: 15%;
+        padding: 0.8em;
+       
+    }
+    
+    /* Making the three nav icon */
+    .mainmobileNavIcon{
+        padding: 35% 0% 0% 0%;
+        cursor: pointer;
+    }
+    
+    
+    .mainmobileNavIcon div{
+        height: 0.8px;
+        width: 55%;
+        background-color: black;
+        display: block;
+        transition: all 0.4s ease-in-out;
+    
+    }
+
+
+
+
+    /* Weird, IKR? */
+    .marginAdder{
+        margin: 0.6em 0;
+    }
+
+
+
+
+    .moveIcon2{
+        transform: rotate(-40deg);
+        /* margin: 2em; */
+    }
+
+    .moveIcon1{
+        transform: rotate(40deg);
+        margin: 0;
+    }
+    
+    .mainmobileNavIcon .icon1{
+        width: 24%;
+        
+    }
+
+    .mobilemenucontent{
+        font-family: 'Raleway', sans-serif;
+        display: none;
+        height: 100vh;
+       
+    }
+
+    /* The Menu Items */
+
+    .mobilemenucontent ul{
+        text-align: center;
+        list-style-type: none;
+        font-size: 1em;
+        line-height: 4em;
+        font-weight: lighter;
+        font-size: 1.4em;
+        margin: 0;
+        
+    }
+
+    .mobilemenucontent ul li::before{
+        content: "";
+        border-bottom: 1px solid green;
+        width: 30px;
+        border-bottom: 1px solid white;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+
+    }
+
+    .mobilemenucontent ul li{
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        cursor: pointer;
+        color: black;
+        
+    }
+
+    .mobileNav button{
+        display: block;
+        background: white;
+        color: var(--official-color);
+        font-size: 1.22em;
+        transform: scale(0.6);
+        border-radius: 300px;
+        margin: 0;
+        padding: 0.6em 1em;
+        width: 100%;
+
+    }
+
+
+    /* Styling for showcase */
+    .showcaseText, .showcaseImage{
+        display: none;
+    }
+
+    .showcaseforMobile{
+        display: block;
+        height: 60vh;
+        background: linear-gradient( rgba(247, 94, 255, 0.589), rgba(255, 20, 145, 0.788)), url("/images/showcaseImg.jpg");
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        -webkit-clip-path: polygon(0 0, 88% 0, 100% 100%, 13% 100%);
+        clip-path: polygon(0 0, 88% 0, 100% 100%, 13% 100%);
+        margin-top: 2em;
+        text-align: center;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .showcaseforMobileText{
+        padding-top: 30%;
+        font-size: 1.9em;
+        font-weight: 900
+    }
+
+    .showcaseforMobileText p{
+        font-size: 0.5em;
+        margin-top: 2em;
+    }
+
+    /* END Styling for showcase */
+
+
+
+    /* START cultureBox Stying */
+    
+    .culture h1{
+        font-size:  8vw;
+    }
+
+    .cultureList{
+        box-shadow: none;
+        display: block;
+        position: relative;
+    }
+
+    
+
+    .cultureBox{
+        margin-bottom: 4em;
+        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+        padding: 30px;
+    }
+
+    .cultureBox img{
+        width: 30%;
+    }
+
+    .cultureBox h3{
+        font-size: 6vw;
+    }
+
+    .cultureBox p{
+        font-size: 3.7vw;
+        margin-top: 2em;
+        line-height: 1.6em;
+    }
+
+
+    /* END cultureBox Stying */
+
+    /* START founderBox styling */
+    .founder{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .founderImage img{
+        width: 180px;
+        height: 180px;
+        margin-bottom: 2em;
+    }
+
+    .founderspeech{
+        font-size: 4vw;
+        text-align: left;
+    }
+
+    /* END founderBox styling */
+
+    /* START testimony Box */
+
+    .testimony{
+        display: block;
+    }
+
+    .testimonyBox{
+        border: none;
+        margin: 6.9em 0;
+        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+    }
+    
+
+    .testimonyBox img{
+        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+    }
+
+
+     /* END testimony Box */
+
+     /* START messageUs */
+
+     .messageus{
+         width: 100%;
+         padding: 0;
+     }
+
+     .messageus  h1{
+         font-size: 6.3vw;
+         left: 18%;
+         top: -3%;
+     }
+
+     .messagecredentials{
+         display: block;
+     }
+
+     .credentials{
+         margin-bottom: 4em;
+         width: 100%
+     }
+
+     .credentials p{
+         color: var(--grey)
+     }
+
+     .messageus textarea{
+        width: 80%;
+     }
+
+     /* END messageUs  */
+
+
+     /* START FOOTER */
+     footer{
+        padding: 0;
+        margin:  0;
+     }
+
+     .footer{
+         display: block;
+        
+     }
+
+     .footerItems{
+         margin: 3em 0; 
+         text-align: left;
+     }
+
+     .footer ul li{
+         line-height: 3em;
+     }
+    /* Getting the GRID out! */
+    .showcase{
+        display: block;
+    }
+
+
+   
+
+    /* END STYLING FOR MOBILE VIEW */
+}
+
+
+
 
 
 
@@ -636,3 +937,33 @@ footer h3{
     //CSS
     
   } */
+
+
+
+  /* 
+  ANIMATIONS 
+  */
+
+  /* Turning the MENU ICONS CLLOCKWISE*/
+/* 
+@keyframes icon-move-downLeft{
+    from{
+        transform: rotate(0deg)
+    }
+
+    to{
+        transform: rotate(30deg) translateY(5px)
+    }
+}
+
+
+@keyframes icon-move-downright{
+    from{
+        transform: rotate(0deg)
+    }
+
+    to{
+        transform: rotate(-40deg) translateY(-15px);
+
+    }
+} */
