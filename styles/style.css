@@ -770,7 +770,7 @@ nav ul li:hover{
 
     .showcaseforMobile{
         display: block;
-        height: 60vh;
+        height: 80vh;
         background: linear-gradient( rgba(247, 94, 255, 0.589), rgba(255, 20, 145, 0.788)), url("/images/showcaseImg.jpg");
         width: 100%;
         background-position: center;
@@ -879,7 +879,8 @@ nav ul li:hover{
      /* START messageUs */
 
      .messageus{
-         width: 100%;
+         width: 90%;
+         margin: 3em auto;
          padding: 0;
      }
 
@@ -940,8 +941,13 @@ nav ul li:hover{
           text-align: center;
       }
 
+      .footerBottom input{
+          width: 65%;
+      }
+
       .rights{
-          grid-template-columns: repeat(2, 50% 50%)
+          grid-template-columns: repeat(2, 50% 50%);
+          font-size: 0.7em;
       }
        
     /* Getting the GRID out! */
