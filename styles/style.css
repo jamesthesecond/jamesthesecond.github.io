@@ -17,10 +17,21 @@ NOTICE:::
     --official-purple: #F65EFF ;
     --offical-footer-color: #646464;
 
-
+    padding:  0;
+    margin: 0;
     --main-black: rgb(0, 0, 0);
     --grey: #646464;
 
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
 }
 
 /* GLOBAL STYLING */
@@ -188,8 +199,6 @@ nav ul li:hover{
     border-radius: 4px;
     padding: 3em 1.4em;
 
-
-
 }
 
 .cultureList img{
@@ -336,7 +345,11 @@ nav ul li:hover{
    left: 35%;
 }
 
-
+.credentials p{
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
 .messagecredentials{
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -389,35 +402,87 @@ nav ul li:hover{
 
 /* Start of Footer Styling DESKTOP  */
 
-footer{
-    width: 100%;
-    background-color: var(--offical-footer-color);
+.footercolumns{
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+    background-color: var(--official-color);
     font-family: 'Raleway', sans-serif;
-    color: whitesmoke;
-    text-align: center;
-    line-height: 2em;  
-    padding: 2em 0.4em 0em 0.4em; 
-    
-
+    color: white;
+    padding: 4em 1.9em;
 }
 
-.footer{
+.footercolumns ul{
+    padding: 0;
+}
+
+.footercolumns ul li{
+    cursor: pointer;
+    list-style-type: none;
+    line-height: 2.5em;
+}
+
+
+.footercolumns h1{
+    text-shadow: 2px 2px var(--official-purple);
+    font-size: 1.5em;
+
+}
+.footerTop{
+    background: var(--official-color);
+    color: white;
     display: grid;
     grid-template-columns: repeat(3, 33%);
+    
 }
 
-footer ul li{
-    list-style-type: none;
-    text-align: center;
+.footerBottom h1{
+    margin-bottom: 1em;
+}
+
+.footerBottom input{
+    width: 75%;
+    margin: 0;
+    padding: 1em 1em;
+    border: 1px solid transparent;
+    border-radius:  300px 0px 0px 300px;
+}
+
+.footerBottom button{
+    padding:  1em 1em;
+    margin: 0;
+    border: 1px solid transparent;
+    background-color: var(--official-purple);
+    color: white;
     cursor: pointer;
-    padding: 0;
-    line-height: 2em;
+    border-radius:  0px 300px 300px 0;
 }
 
-footer h3{
-   font-weight: lighter;
-   color: rgba(255, 255, 255, 0.5);
+.footerBottom p{
+    text-align: center;
+    margin: 1em;
 }
+
+.rights{
+    display: grid;
+    grid-template-columns: repeat(2, 70% 30%);
+    color: whitesmoke;
+    background-color: var(--official-purple);
+    font-family: 'Raleway', sans-serif;
+    padding: 2em 0;
+}
+
+.rights p{
+    text-align: right;
+    padding: 0 1em;
+}
+
+.rights h3{
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0 1em;
+    
+}
+
 
 
 
@@ -425,7 +490,7 @@ footer h3{
 
 /* THE STYLE ADJUST FOR TABLET VIEW. */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 760px) and (max-width: 1024px) {
     
     body{
         position: relative;
@@ -481,29 +546,7 @@ footer h3{
 
      /* Founder Style */
         
-        .founder{
-            width: 90%;
-
-        }
-
-        .founderImage img{
-            width: 250px;
-            height: 250px;
-        }
-
-        .founderspeech{
-            font-size: 1.9vw;
-
-        }
-
-        .founder .name h3{
-            font-size: 2.4vw;
-        }
-
-        .founder .name p{
-            font-size: 2.4vw;
-        }
-
+       
 
      /* End Founder Style */
 
@@ -539,6 +582,35 @@ footer h3{
             top: -3%;
             left: 28%;
         }
+
+
+        /* Footer Styling TABLET VIEW */
+
+        .footercolumns{
+            display: inline-block;
+            width: 100%;
+            padding:  2em 0;
+            text-align: center;
+        }
+
+        .footerBottom{
+            margin: 4em 0;
+            text-align: center;
+        }
+
+        .footerBottom h1{
+            text-align: center;
+
+        }
+
+        .footerBottom input,  .footerBottom button{
+            padding: 1.5em 1.5em;
+            border: 4px solid white;
+        }
+
+       
+
+        
 
     
 
@@ -703,8 +775,6 @@ footer h3{
         width: 100%;
         background-position: center;
         background-size: cover;
-        -webkit-clip-path: polygon(0 0, 88% 0, 100% 100%, 13% 100%);
-        clip-path: polygon(0 0, 88% 0, 100% 100%, 13% 100%);
         margin-top: 2em;
         text-align: center;
         color: white;
@@ -772,8 +842,8 @@ footer h3{
     }
 
     .founderImage img{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 185px;
         margin-bottom: 2em;
     }
 
@@ -799,6 +869,8 @@ footer h3{
 
     .testimonyBox img{
         box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+        bottom: -6%;
+        left: 39%;
     }
 
 
@@ -823,7 +895,13 @@ footer h3{
 
      .credentials{
          margin-bottom: 4em;
-         width: 100%
+         width: 100%;
+         padding: 0
+     }
+
+     .credentials input{
+         width: 100%;
+         padding: 0;
      }
 
      .credentials p{
@@ -831,31 +909,41 @@ footer h3{
      }
 
      .messageus textarea{
-        width: 80%;
+        width: 90%;
      }
 
      /* END messageUs  */
 
 
      /* START FOOTER */
-     footer{
-        padding: 0;
-        margin:  0;
-     }
 
-     .footer{
+     .footerTop{
+         width: 100%;
          display: block;
-        
+         text-align: center;
      }
 
-     .footerItems{
-         margin: 3em 0; 
-         text-align: left;
+
+
+     .footercolumns{
+         display: block;
+         
      }
 
-     .footer ul li{
-         line-height: 3em;
+     .footercolumns div{
+         margin: 3em 0;
      }
+
+      .footerBottom{
+          width: 100%;
+          display: block;
+          text-align: center;
+      }
+
+      .rights{
+          grid-template-columns: repeat(2, 50% 50%)
+      }
+       
     /* Getting the GRID out! */
     .showcase{
         display: block;
