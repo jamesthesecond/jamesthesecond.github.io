@@ -12,9 +12,9 @@ NOTICE:::
 
 */
 :root{
-    --official-color: #FF1493;
-    --official-color-shade: rgba(255, 20, 145, 0.733);
-    --official-purple: #F65EFF ;
+    --official-color: #C71585;
+    --official-color-shade: #C71585;
+    --official-purple: #B70569 ;
     --offical-footer-color: #646464;
 
     padding:  0;
@@ -148,7 +148,7 @@ nav ul li:hover{
     font-size: 5.7vw;
     font-weight: bolder;
     width: 100%;
-    background: linear-gradient(to top right , var(--official-purple), var(--official-color));
+    background: linear-gradient(to top right , #C71585, #C71585);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin:  0;
@@ -455,6 +455,10 @@ nav ul li:hover{
     color: white;
     cursor: pointer;
     border-radius:  0px 300px 300px 0;
+}
+
+.footerBottom input, .footerBottom button{
+    border: 4px solid white;
 }
 
 .footerBottom p{
@@ -771,7 +775,7 @@ nav ul li:hover{
     .showcaseforMobile{
         display: block;
         height: 80vh;
-        background: linear-gradient( rgba(247, 94, 255, 0.589), rgba(255, 20, 145, 0.788)), url("/images/showcaseImg.jpg");
+        background: linear-gradient(rgba(183, 5, 106, 0.637), rgba(183, 5, 106, 0.685)), url("/images/showcaseImg.jpg");;
         width: 100%;
         background-position: center;
         background-size: cover;
