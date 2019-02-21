@@ -148,9 +148,7 @@ nav ul li:hover{
     font-size: 5.7vw;
     font-weight: bolder;
     width: 100%;
-    background: linear-gradient(to top right , #C71585, #C71585);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--official-color);
     margin:  0;
 
    
@@ -180,7 +178,7 @@ nav ul li:hover{
     color: white;
     transition: all  0.7s ease-in-out;
     cursor: pointer;
-    transform: scale(1.35)
+    transform: scale(1.15);
 }
 
 /* END of Showcase Styling DESKTOP */
@@ -241,7 +239,7 @@ nav ul li:hover{
         width: 350px;
         height: 350px;
         border-radius: 300px;
-        border: 3px solid var(--official-color-shade)
+        border: 2.3px solid var(--official-color-shade)
        
     }
 
@@ -317,12 +315,12 @@ nav ul li:hover{
     }
 
     .testimonyBox img{
-        width: 20%;
+        width: 18%;
         position: absolute;
         border-radius: 300px;
         bottom: -10%;
         left: 40%;
-        border: 10px solid white;
+        border: 7px solid var(--official-color);
 
     }
 
@@ -492,7 +490,7 @@ nav ul li:hover{
     color: whitesmoke;
     background-color: var(--official-purple);
     font-family: 'Raleway', sans-serif;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .rights p{
@@ -587,6 +585,10 @@ nav ul li:hover{
 
         .testimonyBox img{
             bottom: -5%;
+        }
+
+        .testimonyBox img{
+            width: 25%;
         }
      
      /* Testimony Styling End */
@@ -698,7 +700,7 @@ nav ul li:hover{
     
     
     .mainmobileNavIcon div{
-        height: 0.8px;
+        height: 0.9px;
         width: 55%;
         background-color: black;
         display: block;
@@ -823,6 +825,7 @@ nav ul li:hover{
     
     .culture h1{
         font-size:  8vw;
+        
     }
 
     .cultureList{
@@ -835,7 +838,7 @@ nav ul li:hover{
 
     .cultureBox{
         margin-bottom: 4em;
-        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+        box-shadow: 0 0 10px 1px var(--official-color);
         padding: 30px;
     }
 
@@ -886,12 +889,11 @@ nav ul li:hover{
     .testimonyBox{
         border: none;
         margin: 6.9em 0;
-        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
+        box-shadow: 0 0 10px 3px var(--official-color);
     }
     
 
     .testimonyBox img{
-        box-shadow: 0 0 10px 3px rgba(255, 20, 145, 0.226);
         bottom: -6%;
         left: 39%;
     }
@@ -905,6 +907,7 @@ nav ul li:hover{
          width: 90%;
          margin: 3em auto;
          padding: 0;
+         display: block;
      }
 
      .messageus  h1{
@@ -915,6 +918,8 @@ nav ul li:hover{
 
      .messagecredentials{
          display: block;
+         margin: 3em 1em;
+         text-align: center;
      }
 
      .credentials{
@@ -926,10 +931,13 @@ nav ul li:hover{
      .credentials input{
          width: 100%;
          padding: 0;
+         margin: 0.7em 0;
      }
 
      .credentials p{
-         color: var(--grey)
+         color: var(--grey);
+         text-align: left;
+         margin: 0;
      }
 
      .messageus textarea{
@@ -971,6 +979,7 @@ nav ul li:hover{
       .rights{
           grid-template-columns: repeat(2, 50% 50%);
           font-size: 0.7em;
+          padding: 1em;
       }
        
     /* Getting the GRID out! */
