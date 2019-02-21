@@ -10376,8 +10376,8 @@ iconsParent.on("click", function(){
     $($(iconsParent).children("div")[0]).toggleClass("moveIcon1");
     $($(iconsParent).children("div")[0]).toggleClass("marginAdder");
     $($(iconsParent).children("div")[1]).toggleClass("marginAdder");
-		$($(iconsParent).children("div")[2]).toggle()
-		$($(iconsParent).children("div")[3]).toggle()
+		$($(iconsParent).children("div")[2]).toggle();
+		$($(iconsParent).children("div")[3]).toggle();
 	
 		
 		

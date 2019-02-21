@@ -172,7 +172,15 @@ nav ul li:hover{
     padding: 1em 2em;
     box-shadow: 0 0 4px 1px rgba(255, 20, 145, 0.267) ;
     transform: scale(1.2);
-    margin: 3em 0;
+    margin: 4em 0;
+}
+
+.showcase button:hover{
+    background-color: var(--official-color-shade);
+    color: white;
+    transition: all  0.7s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.35)
 }
 
 /* END of Showcase Styling DESKTOP */
@@ -233,6 +241,7 @@ nav ul li:hover{
         width: 350px;
         height: 350px;
         border-radius: 300px;
+        border: 3px solid var(--official-color-shade)
        
     }
 
@@ -466,6 +475,17 @@ nav ul li:hover{
     margin: 1em;
 }
 
+.footerTop ul li:hover{
+     background-color: white;
+     color: var(--official-purple);
+     width: 80%;
+     border-radius: 200px;
+     padding: 0 0.6em;
+     transform: scale(1);
+     transition: all 0.7s;
+}
+
+
 .rights{
     display: grid;
     grid-template-columns: repeat(2, 70% 30%);
@@ -479,11 +499,10 @@ nav ul li:hover{
     text-align: right;
     padding: 0 1em;
 }
-
 .rights h3{
     font-size: 1em;
     font-weight: lighter;
-    padding: 0 1em;
+    padding: 0 0.3em;
     
 }
 
