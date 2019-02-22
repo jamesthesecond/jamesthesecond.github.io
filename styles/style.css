@@ -337,7 +337,7 @@ nav ul li:hover{
     margin:  9em auto;
     font-family: 'Raleway', sans-serif;
     border: 1px solid var(--official-color);
-    padding: 3em 4em;
+    padding: 3em 1em;
     text-align: center;
     position: relative;
 
@@ -354,17 +354,19 @@ nav ul li:hover{
 
 .credentials p{
     text-align: left;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 .messagecredentials{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    margin: 4em;
+    margin: 4em 0;
+    grid-column-gap: 2em;
+    text-align: center;
 }
 
 .credentials input, .messageus textarea{
-    width: 70%;
+    width: 80%;
     border-style: solid;
     border-top: 1px  solid transparent;
     border-left: 1px  solid transparent;
@@ -372,13 +374,14 @@ nav ul li:hover{
     border-bottom: 1px solid var(--official-purple);
     font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
-    margin: 1em
+    margin: 1.9em 0em;
+    padding: 0;
     
     
 }
 
 .messageBox textarea{
-    width: 100%;
+    width: 90%;
     height: 20vh;
     font-family: 'Raleway', sans-serif;
 }
@@ -478,8 +481,7 @@ nav ul li:hover{
      color: var(--official-purple);
      width: 80%;
      border-radius: 200px;
-     padding: 0 0.6em;
-     transform: scale(1);
+     padding: 0 0.08em;
      transition: all 0.7s;
 }
 
@@ -566,7 +568,14 @@ nav ul li:hover{
 
 
      /* Founder Style */
-        
+        .founderImage img{
+            width: 180px;
+            height: 180px;
+        }
+
+        .founderspeech {
+            font-size: 1.8vw
+        }
        
 
      /* End Founder Style */
@@ -597,10 +606,14 @@ nav ul li:hover{
      /* MessageUs Box start */
 
         .messageus{
-            width: 70%;
+            width: 90%;
         }
 
         .credentials input{
+            width: 90%;
+        }
+
+        .credentials p{
             width: 90%;
         }
 
