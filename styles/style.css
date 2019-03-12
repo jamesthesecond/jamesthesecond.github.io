@@ -41,6 +41,10 @@ h1, h2, h3, p{
     padding:  0;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
 
 input:focus{
     outline: none;
@@ -162,7 +166,7 @@ nav ul li:hover{
 
 }
 
-.showcaseText button{
+.globalButton {
     background-color: white;
     border: 0.2px solid var(--official-purple);    
     outline: none;
@@ -173,7 +177,7 @@ nav ul li:hover{
     margin: 4em 0;
 }
 
-.showcase button:hover{
+.globalButton:hover {
     background-color: var(--official-color-shade);
     color: white;
     transition: all  0.7s ease-in-out;

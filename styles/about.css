@@ -1,0 +1,254 @@
+/* All variables First! */
+
+/* 
+NOTICE::: 
+1- The greater part of the layout for Desktop and Tablet versins would be made possible using CSS GRID.
+2- FONT-SIZES ARE MEASURES IN VW- VIEWPORT-WIDTH;
+3- 
+
+
+
+
+
+*/
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* GLOBAL STYLING */
+
+h1, h2, h3, p{
+    margin: 0;
+    padding:  0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    outline: none
+}
+
+/* Showcase for  desktop */
+/* 
+.ABOUTshowcase{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url("/images/slideOne.JPG");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-top: 30vh;
+}
+
+.ABOUTshowcase h1{
+    font-size: 5.9em;
+    font-weight: 900;
+}
+
+.ABOUTshowcase p{
+    font-size: 1.232em;
+} */
+
+
+
+/*  END Showcase for  desktop */
+
+
+/* Value Box */
+ 
+    .ABOUTvalue{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        background-color: var(--official-color);
+        padding: 10% 1.1%;
+        color: white;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0 auto;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+
+    }
+
+    .value img{
+        margin: 1.1em 0;
+        width: 35%;
+        
+    }
+
+    .value:hover{
+
+        background-color: rgba(255, 255, 255, 0.185);
+   
+
+    }
+
+
+    .value{
+        transition: background 0.4s ease-in-out
+    }
+
+
+/* END Value Box */
+
+    .skillsCircle{
+        display: grid;
+        grid-template-columns: 30% 25% 20% 15% 10% ;
+        margin: 8em;
+
+    }
+
+    .skillsCircle div{
+        width: 100%;
+        display: block;
+        height: 4em;
+        color: white;
+        text-align: center;
+        padding-top: 70%;
+        border-radius: 0 0 19px 0px
+        
+    }
+
+    .frontendDEVS{
+        background-color: #C71585;
+
+    }
+
+    .fullstackDEVS{
+        background-color: rgba(199, 21, 134, 0.836)
+    }
+
+    .machinelearners{
+        background-color: rgba(199, 21, 134, 0.736)
+    }
+
+    .AIpros{
+        background-color: rgba(199, 21, 134, 0.536)
+    }
+
+    .websecurity{
+        background-color: rgba(199, 21, 134, 0.336)
+    }
+/*  */
+
+
+/* BENEFITS BOX */
+
+.ABOUTmembersBenefit{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    
+}
+
+.benefits{
+    text-align: center;
+    width: 50%;
+    margin: 3em auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px 6px rgba(199, 21, 134, 0.089);
+    padding: 5.1em 2em;
+    position: relative;
+    line-height: 2em;
+    border-radius: 10px;
+    
+
+}
+
+.benefits img{
+    width: 23%;
+    position: absolute;
+    top: -17%;
+    left: -5%;
+    
+
+
+}
+
+/* BENEFITS BOX END */
+
+
+/*  TEAM BOX */
+
+  .ABOUTteam h1{
+    font-size: 2.2em;
+    text-align: center;
+    position: relative;
+    margin: 3em 0;
+
+  }
+
+  .ABOUTteam h1::before{
+      display: block;
+      content: "";
+      width: 10%;
+      height: 4px;
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      text-align: center;
+      background-color: rgba(199, 21, 134, 0.815);
+  }
+
+
+  .members{
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      text-align: center;
+  }
+
+  .teamMember{
+
+  }
+
+  .teamMember img{
+    width: 55%;
+    border-radius: 200px;
+    box-shadow: 0 0 10px 3px rgba(199, 21, 134, 0.158);
+
+  }
+
+  .teamMember h3{
+      font-size: 2em;
+      color: #C71585;
+   }
+/* END TEAM BOX */
+
+.ABOUTpatners{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    width: 70%;
+    margin: 3em auto;
+
+}
+
+.ABOUTpatners img{
+    width: 90%;
+    margin: 0;
+    opacity: 0.4
+
+}
+
