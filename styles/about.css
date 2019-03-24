@@ -49,30 +49,91 @@ button:active{
 }
 
 /* Showcase for  desktop */
-/* 
-.ABOUTshowcase{
-    width: 100%;
-    height: 60vh;
-    background: linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url("/images/slideOne.JPG");
-    background-position: center;
-    background-size: cover;
+
+.slider{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    /* overflow: hidden; */
+  
+}
+
+.sliderMama{
+    overflow: hidden;
+}
+
+
+.slideOne, .slideTwo, .slideThree{
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    padding-top: 25vh;
+    overflow: hidden;
+
+}
+
+
+.slideMe p{
+    color: white;
+    font-size: 2.4em;
+    font-weight: 900;
+
+}
+
+
+.sliderMama{
+    position: relative
+}
+
+
+
+
+
+.sliderMamaContent{
+    position: absolute;
+    top: 30%;
+    left: 40%;
     text-align: center;
     color: white;
-    padding-top: 30vh;
 }
 
-.ABOUTshowcase h1{
-    font-size: 5.9em;
+.sliderMamaContent h1{
+    font-size: 3.6em;
     font-weight: 900;
+
 }
 
-.ABOUTshowcase p{
-    font-size: 1.232em;
-} */
+.sliderMamaContent p{
+    font-size: 1.3em;
+    font-weight: lighter
+}
+.slideOne{
+    
+    
+    background: linear-gradient(rgba(199, 21, 134, 0.507), rgba(183, 5, 106, 0.486)),  url("../images/slideOne.JPG");
+    background-position: top;
+    background-size: cover;
+
+}
+
+.slideTwo{
+    
+    background: linear-gradient(rgba(199, 21, 134, 0.466), rgba(183, 5, 106, 0.322)) , url("../images/slideTwo.JPG");
+    background-position: center;
+    background-size: cover;
+}
 
 
+.slideThree{
+  
+    background: linear-gradient(rgba(199, 21, 134, 0.562), rgba(183, 5, 106, 0.377)) , url("../images/slideThree.JPG");
+    background-position: center;
+    background-size: cover;
+}
 
-/*  END Showcase for  desktop */
+/* END Showcase for  desktop */
+
 
 
 /* Value Box */
@@ -112,6 +173,8 @@ button:active{
 
 /* END Value Box */
 
+/*SKILLS BOX  */
+
     .skillsCircle{
         display: grid;
         grid-template-columns: 30% 25% 20% 15% 10% ;
@@ -150,7 +213,7 @@ button:active{
     .websecurity{
         background-color: rgba(199, 21, 134, 0.336)
     }
-/*  */
+/*END SKILLS BOX  */
 
 
 /* BENEFITS BOX */
@@ -220,9 +283,6 @@ button:active{
       text-align: center;
   }
 
-  .teamMember{
-
-  }
 
   .teamMember img{
     width: 55%;
@@ -237,6 +297,8 @@ button:active{
    }
 /* END TEAM BOX */
 
+
+/* Patners Box */
 .ABOUTpatners{
     display: grid;
     grid-template-columns: repeat(5, 20%);
@@ -249,6 +311,251 @@ button:active{
     width: 90%;
     margin: 0;
     opacity: 0.4
+
+}
+
+/* END Patners Box */
+
+
+/* Tablet customization */
+@media (min-width: 760px) and (max-width: 1024px) {
+
+
+    /* Slider for tab */
+    .slider{
+        height: 50vh;
+    }
+
+    .slideOne, .slideTwo, .slideThree{
+        height: 50vh;
+    }
+
+    
+
+    .sliderMamaContent{
+        left: 25%;
+    }
+
+      /* END Slider for tab */
+
+      /* VALUE BOX FOR TAB */
+
+        .ABOUTvalue{
+
+            padding: 20% 0;
+            padding-top: 10%;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: 50% 50%;
+            width: 100%;
+        }
+
+        .value{
+            padding: 2em 1.4em;
+        }
+
+        .value img{
+            width: 23%;
+        }
+
+      /* END VALUE BOX FOR TAB */
+
+
+      /* SKILLS BOX for Tab */
+
+        .skillsCircle{
+            margin: 3em 1em;;
+        }
+
+        .skillsCircle div{
+            padding-top: 40%;
+        }
+
+      /*END SKILLS BOX  for tab */
+
+
+      /* BENEFIT BOX for Tab */
+
+        .ABOUTmembersBenefit{
+            display: block;
+            width: 100%;
+            margin: 9em 0;
+
+        }
+
+        .benefits{
+            width: 70%;
+            margin: 6em auto;
+
+        }
+
+
+        .benefits img{
+            width: 13%;
+
+        }
+
+       /*END  BENEFIT BOX for Tab */
+
+
+
+       /* Team Box  for Tablet */
+
+        .teamMember{
+            margin: 3em 0;
+        }
+
+        .teamMember img{
+            width: 55%;
+        }
+
+        .teamMember h3{
+            font-size: 1.3em;
+        }
+
+       /* END Team Box for TAB */
+
+
+
+
+
+
+}
+/* End for tab customization */
+
+/* STYLING FOR MOBILE VIEW */
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    body{
+        padding-top: 7em;
+    }
+
+    /* Slider for MOBILE */
+
+
+    .slider{
+        height: 70vh;
+        margin-bottom: 1em;
+    }
+    .slideOne, .slideTwo, .slideThree{
+        height: 50vh;
+    }
+
+    .sliderMamaContent{
+        left: 7%;
+    }
+
+    /* END slider Mobile */
+
+    /* VALUE BOX for Mobile */
+
+        .ABOUTvalue{
+            display: block;
+            padding-bottom: 9em;
+            width: 100%;
+        }
+
+        .value img{
+            width: 24%;
+        }
+
+        .value{
+            padding: 2em 1.2em;
+            width: 80%;
+            margin: 0 auto;
+        }
+    /* End Value Box for Mobile */
+
+    /* SKilss Box for Mobile */
+
+        .skillsCircle{
+            display: block;
+            margin: 2em 1em;
+        }
+
+
+        .skillsCircle div:nth-child(1){
+            width: 100%;
+            padding-top: 40%;
+        }
+
+        .skillsCircle div:nth-child(2){
+            width: 80%;
+            padding-top: 40%;
+        }
+      
+        .skillsCircle div:nth-child(3){
+            width: 70%;
+            padding-top: 40%;
+        }
+
+        .skillsCircle div:nth-child(4){
+            width: 55%;
+            padding-top: 40%;
+        }
+
+        .skillsCircle div:nth-child(5){
+            width: 35%;
+            padding-top: 40%;
+        }
+
+       
+
+
+    /* END Skills Box for Mobile */
+
+
+
+    /* Benefit Box for Mobile */
+
+    .ABOUTmembersBenefit{
+        display: block;
+        margin: 10em 0;
+        width: 100%;
+    }
+
+    .benefits{
+        width: 58%;
+        margin: 9em auto;
+    }
+
+    .benefits img{
+        top: -15%;
+    }
+
+     /*END  Benefit Box for Mobile */
+
+     /* TEAM BOX */
+
+        .members{
+            display: block;
+        }
+
+        .teamMember{
+            margin: 3em 0;
+        }
+
+        .teamMember h3{
+            font-size: 1.3em;
+        }
+        .teamMember img{
+            width: 37%;
+        }
+
+     /* END TEAM BOX */
+
+
+     /*PATNERS BOX for Mobile */
+
+        .ABOUTpatners{
+            width: 100%;
+        }
+
+     /*END PATNERS BOX for Mobile */
+
+
+
 
 }
 

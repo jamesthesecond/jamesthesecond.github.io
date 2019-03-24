@@ -66,37 +66,31 @@
     </div>
     <!-- END ABOUT MOBILE  MENU -->
 
-    <!-- About Page SHOWCASE -->
-    <!-- <div class="ABOUTshowcase">
-        <div class="AbtshowcaseText">
+    <!-- Slider for ABOUT PAGE. -->
+    <div class="sliderMama">
+        <div class="sliderMamaContent">
             <h1>About Us</h1>
-
-            <p>
-                Guiding Tech-Girls to their Ful Potential
-            </p>
-
+            <p>Guiding Tech-Girls to their Ful Potential</p>
             <button class="globalButton">
-                Join Us
+                    Join Us
             </button>
-
         </div>
-
+        
+           
+    <div class="slider">
+        <div class=" slideMe slideOne">          
+        </div>
+        <div class=" slideMe slideTwo">           
+        </div>
+        <div class=" slideMe slideThree"></div>
+    </div>
 
     </div>
 
-    <div class="ABOUTvalues">
-        
-    </div> -->
-
-    <!-- END About Page SHOWCASE -->
 
     <!-- Value Box -->
 
-    <div class="header">
-        <h1>
-            HEADER IS WOULD BE AVAILABLE SHORTLY. 
-        </h1>
-    </div>
+    
     <div class="ABOUTvalue">
         <div class="value">
             <img src="./images/growth.svg" alt="">
@@ -319,6 +313,56 @@
 
 
 <script src="./javascript/func.js"></script>
+
+<script>
+
+    // the width of users device
+    let $Windows = $("body").width();
+
+    
+        // The SLIDE container
+        let $slider = $(".slider");
+
+
+        let count = 1;
+
+
+function firstSlider(){
+        let slideRight = 
+            setInterval(function() {
+                
+                $slider.animate({marginLeft: "-"+ $Windows * count}, 1000)
+                count++
+
+                if(count === 3){
+                 secondSlider()  
+                }
+            }, 3000)
+}
+
+firstSlider();
+
+
+
+            function secondSlider (){
+                count = 0;
+                    clearInterval(slideRight);
+
+                  let newInterval =   setInterval(function(){
+                        $slider.animate({marginLeft: $Windows * count}, 1000)
+                    count--
+
+                    if(count === -3){
+                        clearInterval(newInterval);
+                        firstSlider();
+
+                    }
+                    }, 2000)
+
+            }
+
+
+</script>
 </body>
 
 
