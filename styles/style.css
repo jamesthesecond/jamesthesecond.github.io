@@ -62,7 +62,7 @@ button:active{
 
 nav ul{
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(6, 16.667%);
     grid-column-gap: 0.1em;
     text-align: center;
     list-style: none;
@@ -71,6 +71,7 @@ nav ul{
     color: var(--grey);
     margin: 0;
     padding: 0;
+    width: 95%;
 
 
 }
@@ -96,7 +97,7 @@ nav ul li{
 nav ul li:hover{
     cursor: pointer;
     color: var(--official-color);
-    transform: scale(1.2);
+    transform: scale(1.04);
     transition: transform  0.4s ease-in-out
     
 }
@@ -676,6 +677,7 @@ nav ul li:hover{
     .mobileNav{
         display: block;
         position: fixed;
+        z-index: 1000;
         top: 0;
         left: 0;
         width: 100%;
