@@ -1006,7 +1006,7 @@ nav ul li:hover{
 /* WHEN YOU ON A PAGE */
 
 .onMe{
-    color: #9D19BE !important ;
+    color: var(--official-color)!important ;
     border-bottom: 1px solid  var(--official-color)  !important;
     margin-bottom: 2em;
      
