@@ -111,7 +111,7 @@ button:active{
 .slideOne{
     
     
-    background: linear-gradient(rgba(199, 21, 134, 0.507), rgba(183, 5, 106, 0.486)),  url("../images/slideOne.JPG");
+    background: linear-gradient(rgba(199, 21, 134, 0.507), rgba(183, 5, 106, 0.486)),  url("../images/slideOne-min.JPG");
     background-position: top;
     background-size: cover;
 
@@ -119,7 +119,7 @@ button:active{
 
 .slideTwo{
     
-    background: linear-gradient(rgba(199, 21, 134, 0.466), rgba(183, 5, 106, 0.322)) , url("../images/slideTwo.JPG");
+    background: linear-gradient(rgba(199, 21, 134, 0.466), rgba(183, 5, 106, 0.322)) , url("../images/slideTwo-min.JPG");
     background-position: center;
     background-size: cover;
 }
@@ -127,7 +127,7 @@ button:active{
 
 .slideThree{
   
-    background: linear-gradient(rgba(199, 21, 134, 0.562), rgba(183, 5, 106, 0.377)) , url("../images/slideThree.JPG");
+    background: linear-gradient(rgba(199, 21, 134, 0.562), rgba(183, 5, 106, 0.377)) , url("../images/slideThree-min.JPG");
     background-position: center;
     background-size: cover;
 }
@@ -141,9 +141,9 @@ button:active{
     .ABOUTvalue{
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        background-color: var(--official-color);
+        background-color: white;
         padding: 10% 1.1%;
-        color: white;
+        color: rgba(157, 25, 190, 0.623);
         font-size: 1.3em;
         text-align: center;
         margin: 0 auto;
@@ -443,7 +443,7 @@ button:active{
     }
 
     .sliderMamaContent{
-        left: 7%;
+        left: 0%;
     }
 
     /* END slider Mobile */

@@ -676,7 +676,7 @@ nav ul li:hover{
 
     .mobileNav{
         display: block;
-        position: fixed;
+        position: absolute;
         z-index: 1000;
         top: 0;
         left: 0;
@@ -1002,6 +1002,15 @@ nav ul li:hover{
     /* END STYLING FOR MOBILE VIEW */
 }
 
+
+/* WHEN YOU ON A PAGE */
+
+.onMe{
+    color: #9D19BE !important ;
+    border-bottom: 1px solid #9D19BE !important;
+    margin-bottom: 2em;
+     
+}
 
 
 

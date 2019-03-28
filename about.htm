@@ -29,44 +29,14 @@
         <ul>
             <a href="./index.html"><img src="./images/SHE CODE AFRICA 1.svg" alt=""></a>
             <li>Blog</li>
-            <li>About</li>
+            <li  class="onMe">About</li>
             <li>Communitiy</li>
             <li>Jobs</li>
             <li>Events</li>
         </ul>
     </nav>
 
-    <!-- ABOUT MOBILE  MENU -->
-    <div class="mobileNav">
-        <div class="mainmobileNav">
-            <div class="mainmobileNavImg">
-                <img src="./images/SHE CODE AFRICA 1.svg" alt="">
-            </div>
-
-            <div class="mainmobileNavIcon ">
-                <div class="marginAdder"></div>
-                <div class="marginAdder"></div>
-                <div class="otherDiv" style="margin-top: 0.5em"></div>
-                <div class="otherDiv" style="margin-top: 0.5em"></div>
-                
-                
-            </div>
-        </div>
-
-        <div class="mobilemenucontent">
-            <ul>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Communitiy</li>
-                <li>Jobs</li>
-               
-
-                <button class="mobilenavJoin">Join Us</button>
-            </ul>
-        </div>
-    </div>
-    <!-- END ABOUT MOBILE  MENU -->
-
+  
     <!-- Slider for ABOUT PAGE. -->
     <div class="sliderMama">
         <div class="sliderMamaContent">
@@ -94,28 +64,28 @@
     
     <div class="ABOUTvalue">
         <div class="value">
-            <img src="./images/growth.svg" alt="">
+            <img src="./images/growth2.svg" alt="">
             <p>
                 Growth- We make it happen
             </p>
         </div>
 
         <div class="value">
-            <img src="./images/team(2).svg" alt="">
+            <img src="./images/team3.svg" alt="">
             <p>
                 Together We are always better
             </p>
         </div>
 
         <div class="value">
-            <img src="./images/help.svg" alt="">
+            <img src="./images/help2.png" alt="">
             <p>
                 We are there- at every step!
             </p>
         </div>
 
         <div class="value">
-            <img src="./images/medal(1).svg" alt="">
+            <img src="./images/medal2.svg" alt="">
             <p>
                For us rewarding sucess is a must
             </p>
@@ -309,6 +279,37 @@
 
     <!-- End footer -->
 
+     <!-- MOBILE  MENU -->
+     <div class="mobileNav">
+        <div class="mainmobileNav">
+            <div class="mainmobileNavImg">
+                <a href="./index.html"><img src="./images/SHE CODE AFRICA 1.svg" alt=""></a>
+            </div>
+
+            <div class="mainmobileNavIcon ">
+                <div class="marginAdder"></div>
+                <div class="marginAdder"></div>
+                <div class="otherDiv" style="margin-top: 0.5em"></div>
+                <div class="otherDiv" style="margin-top: 0.5em"></div>
+                
+                
+            </div>
+        </div>
+
+        <div class="mobilemenucontent">
+            <ul>
+                <li>Blog</li>
+                <li> <a href="./about.htm">About</a> </li>
+                <li>Communitiy</li>
+                <li>Jobs</li>
+               
+
+                <button class="mobilenavJoin">Join Us</button>
+            </ul>
+        </div>
+    </div>
+
+
 
 
 
@@ -332,13 +333,13 @@ function firstSlider(){
         let slideRight = 
             setInterval(function() {
                 
-                $slider.animate({marginLeft: "-"+ $Windows * count}, 1000)
+                $slider.animate({marginLeft: "-"+ $Windows * count}, 3000)
                 count++
 
                 if(count === 3){
                  secondSlider()  
                 }
-            }, 3000)
+            }, 4000)
 }
 
 firstSlider();
@@ -350,7 +351,7 @@ firstSlider();
                     clearInterval(slideRight);
 
                   let newInterval =   setInterval(function(){
-                        $slider.animate({marginLeft: $Windows * count}, 1000)
+                        $slider.animate({marginLeft: $Windows * count}, 3000)
                     count--
 
                     if(count === -3){
@@ -358,7 +359,7 @@ firstSlider();
                         firstSlider();
 
                     }
-                    }, 2000)
+                    }, 4000)
 
             }
 
