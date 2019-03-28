@@ -1007,7 +1007,7 @@ nav ul li:hover{
 
 .onMe{
     color: #9D19BE !important ;
-    border-bottom: 1px solid #9D19BE !important;
+    border-bottom: 1px solid  var(--official-color)  !important;
     margin-bottom: 2em;
      
 }
