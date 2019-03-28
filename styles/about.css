@@ -143,7 +143,7 @@ button:active{
         grid-template-columns: repeat(4, 25%);
         background-color: white;
         padding: 10% 1.1%;
-        color: rgba(157, 25, 190, 0.623);
+        color: #B70569;
         font-size: 1.3em;
         text-align: center;
         margin: 0 auto;
@@ -261,20 +261,11 @@ button:active{
     text-align: center;
     position: relative;
     margin: 3em 0;
+   
 
   }
 
-  .ABOUTteam h1::before{
-      display: block;
-      content: "";
-      width: 10%;
-      height: 4px;
-      position: absolute;
-      bottom: -3px;
-      left: 50%;
-      text-align: center;
-      background-color: rgba(199, 21, 134, 0.815);
-  }
+  
 
 
   .members{
@@ -310,7 +301,7 @@ button:active{
 .ABOUTpatners img{
     width: 90%;
     margin: 0;
-    opacity: 0.4
+    opacity: 0.6
 
 }
 
