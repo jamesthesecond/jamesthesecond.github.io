@@ -33,9 +33,9 @@ iconsParent.on("click", function(){
 let slideMother = $(".ABOUTshowcase");
 let counter = 0;
 let mainBackgrounds = [
- 	" linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url('/images/slideOne.JPG')",
+ 	" linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url('/images/slideOne-min.JPG')",
 	" linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url('/images/slideTwo.JPG')",
-	" linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url('/images/slideThree.JPG')"
+	" linear-gradient(rgba(183, 5, 106, 0.536), rgba(199, 21, 134, 0.481) ), url('/images/slideTwo-min.JPG')"
 ]
 setInterval(
 	function(){
